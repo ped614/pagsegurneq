@@ -1,0 +1,377 @@
+"use strict";(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([["index"],{9658:(e,t,a)=>{a.r(t),a.d(t,{default:()=>Nt});var n=a(9381),i=a.n(n),r=a(4563),o=a(5963),l=a(4028),s=a(7462),c=a(2720),m=a(8310),u=a(954),d=a(394),p=a(4407),g=a(1288);const y=d.ZP.a`
+  flex: 1;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  ${g.r.typography.labelRegular400}
+  letter-spacing: 0.4px;
+  color: ${g.r.color.text.secondary};
+
+  strong {
+    display: block;
+    ${g.r.typography.labelLarge}
+  }
+
+  &:not(:first-child) {
+    border-left: 1px solid ${g.r.color.border.divider};
+  }
+
+  &:nth-child(n + 2) {
+    display: none;
+  }
+
+  @media (min-width: ${p.A.md}) {
+    &:not(:nth-child(n + 3)) {
+      display: block;
+    }
+  }
+
+  @media (min-width: ${p.A.lg}) {
+    &:nth-child(n) {
+      display: block;
+    }
+  }
+`,h=e=>{let{header:t,position:a,url:i,fullUrl:r}=e;const{getTimeFromInit:o}=(0,u.E)(),s=t.replace(/<\/?[^>]+(>|$)/g,"");return n.createElement(y,{href:r,onClick:()=>(0,l.EK)({element:{name:s,action:"click_on_benefit_tile",interaction:"click",type:"benefit_tile",link_path:r,unified_link:i,position:a.toString(),timing:o()},event:"element_click",_clear:!0})},n.createElement("span",{dangerouslySetInnerHTML:{__html:t}}))},k=d.ZP.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+
+  @media (min-width: ${p.A.md}) {
+    margin-top: 3.5rem;
+    margin-bottom: 0;
+  }
+`,v=e=>{let{benefits:t}=e;return t&&t.length>0?n.createElement(k,{"data-testid":"benefits"},t.map(((e,t)=>n.createElement(h,(0,s.Z)({key:e.url,position:t},e))))):null},b=a(4682).i`
+  margin-top: 0em;
+  margin-bottom: 0.65rem;
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: ${p.A.md}) {
+    margin-bottom: 1.15rem;
+  }
+`,f=d.ZP.span`
+  ${b};
+`,_=d.ZP.a`
+  color: ${g.r.color.text.primary};
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`,P=d.ZP.h1`
+  ${g.r.typography.titleDisplay}
+`,C=d.ZP.h2`
+  ${g.r.typography.titleLarge}
+`,E=d.ZP.h3`
+  ${g.r.typography.titleMedium}
+`,w=d.ZP.div`
+  text-align: center;
+  margin-bottom: 0.5rem;
+`,D=e=>{let{titleElement:t,children:a}=e;switch(t){case c._O.H1:return n.createElement(P,null,a);case c._O.H2:return n.createElement(C,null,a);case c._O.H3:return n.createElement(E,null,a);default:return n.createElement(f,null,a)}},S=e=>{const{link:t,title:a,titleElement:i}=e;return t?n.createElement(D,{titleElement:i},n.createElement(_,{href:t},a)):n.createElement(D,{titleElement:i},a)};var A=a(5538),T=a(686);const I=(0,T.z)(A.m)`
+  > div {
+    padding-bottom: 1rem;
+
+    & > div:first-child {
+      margin-left: 1rem;
+
+      @media (min-width: ${p.A.md}) {
+        margin-left: 0;
+      }
+    }
+
+    & > div:last-child {
+      margin-right: 1rem;
+
+      @media (min-width: ${p.A.md}) {
+        margin-right: 0;
+      }
+    }
+  }
+`,R=e=>{let{title:t,articles:a}=e;const{getTimeFromInit:i}=(0,u.E)(),r=n.useCallback(((e,t)=>{const n=`${a.indexOf(t)+1}`;(0,l.EK)({blog:{name:t.title,action:"click_on_blog_tile",interaction:"click",type:"blog_tile",link_path:t.url,position:n,timing:i(),location:"homepage",unified_link:t.hreflangId},event:"article_click",_clear:!0})}),[i,a]);return a&&a.length>0?n.createElement("div",{"data-testid":"blog"},n.createElement(w,null,n.createElement(S,{titleElement:c._O.H2,title:t,link:"/beautyblog/"})),n.createElement(I,{articles:a,onClick:r})):null};var O=a(3815),N=a(4487);const x=d.ZP.div`
+  display: ${e=>e.display?e.display:"block"};
+`,L=()=>n.createElement(x,null);class M extends n.Component{state={error:null};componentDidCatch(e){"undefined"!=typeof window&&(this.setState({error:e}),N.Tb(e))}render(){if(this.state.error){const{fallback:e=L}=this.props;return e()}return this.props.children}}const B=M,U=(e,t,a)=>e[a]&&t[a]?{parentComponentType:e[a].type,banner:t[a]}:null;var z=a(2708),F=a(7965);const $=T.z.div`
+  display: block;
+
+  @media (min-width: ${p.A.lg}) {
+    display: none;
+  }
+`,j=T.z.div`
+  margin-top: 2.5rem;
+`,W=e=>{let{banner:t,index:a}=e;const[i,r]=(0,z.YD)({triggerOnce:!0});return n.useEffect((()=>{r&&(0,l.aN)(t,a,"view_promotion")}),[r,t,a]),n.createElement(j,{ref:i},n.createElement(F.j,(0,s.Z)({},t,{onClick:()=>(0,l.aN)(t,a,"select_promotion")})))},H=e=>{let{type:t}=e;return n.createElement($,null,n.createElement(Z,{type:t}))},Z=e=>{let{type:t}=e;const a=(()=>{const{components:e}=(0,o.vI)(),t=e.find((e=>e.type===c.re.PROMOTIONS_BANNERS));if(!t)return;const{promotionBanners:a}=t&&t.data,n=e.filter((e=>Object.values(c.kC).includes(e.type)&&e.data.products.length>0));return{firstBannerPosition:U(n,a,0),secondBannerPosition:U(n,a,1)}})();if(!a)return null;const{firstBannerPosition:i,secondBannerPosition:r}=a;switch(t){case i?.parentComponentType:return i?.banner&&n.createElement(W,{banner:i.banner,index:0});case r?.parentComponentType:return r?.banner&&n.createElement(W,{banner:r.banner,index:1});default:return null}};var K=a(8218),G=a(8618);const V=(0,d.ZP)(G.B)`
+  max-width: ${r.jt};
+  margin: 0 auto 2.5rem;
+`,Q=e=>{let{primaryBanners:t}=e;const a=(e=>{const{openModal:t}=(0,K.DK)();return n.useMemo((()=>e&&e.length>0?e.map(((e,a)=>{const n=((e,t,a)=>({id:e.id,code:e.code,name:e.code,location:"carousel",position:a,creative:e.creative,destination_url:t}))(e.ecommerce,e.link,a);return{...e,background:{...e.background,imageHighRes:e.background.imageHighResolution},onClick:()=>{(0,l.EK)({event:"select_promotion",promotions:[n],_clear:!0})},onViewed:()=>{(0,l.EK)({event:"view_promotion",promotions:[n],_clear:!0})},onInfoButtonClick:e.legalPopup.legalPopupText&&e.legalPopup.useLegalPopup?()=>t(e.legalPopup):void 0}})):null),[e,t])})(t);return a?n.createElement(V,{defaultBackground:a[0]?.background?a[0].background:r.CO,items:a}):null};var Y=a(2783),q=a(4747),X=a(1538),J=a(5862),ee=a(6837);const te=[m.Qx.CUSTOM_PRODUCTS_ROW,m.Qx.CUSTOM_PRODUCTS_ROW_2],ae=(e,t,a,n,i)=>{const r=te.includes(a)?`${n?"reco_":""}${i??"manual"}`:a.toString();(0,l.EK)({product_lists:{interaction:"scroll",sorting_type:"automatic",list_id:r,list_name:a,products:e.map((e=>(0,ee.e)({product:e,currencyCode:t,listName:a,listPosition:e.position,isWishlisted:e.isWishlisted})))},event:"view_item_list",_clear:!0})},ne=n.createContext({}),ie=e=>{const{products:t,itemsPerSlide:a,listName:i,filter:r,isRecommended:o}=e,l=(0,X.K$)(),{productIds:s}=(0,J.Yu)(),{code:c}=l.defaultCurrency??{code:""},[m,u]=n.useState([]),d=n.useCallback(((e,a)=>{const n=t.find((t=>t.id.toString()===e.product.id)),i={...n,position:a,tracked:!1,isWishlisted:s.includes(n.id.toString())};u((e=>[...e,i]))}),[t,s]);n.useEffect((()=>{const e=m[m.length-1];if(e)if(e.position%a!=0){if(e.position===t.length){const e=t.length%a,n=m.slice(-e);ae(n,c,i,o,r)}}else{const e=m.slice(-a);ae(e,c,i,o,r)}}),[c,r,o,a,m,i,t.length]);const p=n.useMemo((()=>({onItemShow:d})),[d]);return n.createElement(ne.Provider,{value:p},e.children)};ie.identifier="ProductRowTrackingProvider";var re=a(6742),oe=a(4006),le=a(662);const se=(0,le.defineMessages)({priceInCollection:{id:"homepage.productTile.priceInCollection",defaultMessage:"from"},[`attribute${oe.Q.TagAttributes.New}`]:{id:"homepage.attribute.new",defaultMessage:"New"},[`attribute${oe.Q.TagAttributes.Action}`]:{id:"homepage.attribute.action",defaultMessage:"Special offer"},[`attribute${oe.Q.TagAttributes.Clearance}`]:{id:"homepage.attribute.clearance",defaultMessage:"Clearance"},[`attribute${oe.Q.TagAttributes.FreeDelivery}`]:{id:"homepage.attribute.freeDelivery",defaultMessage:"Free delivery"},[`attribute${oe.Q.TagAttributes.Damaged}`]:{id:"homepage.attribute.damage",defaultMessage:"Damaged packaging"},[`attribute${oe.Q.TagAttributes.Returned}`]:{id:"homepage.attribute.returned",defaultMessage:"Unwrapped"},[`attribute${oe.Q.TagAttributes.Gift}`]:{id:"homepage.attribute.gift",defaultMessage:"Gift"},conditionalDiscountLabel:{id:"homepage.products.conditionalDiscountLabel",defaultMessage:"- {discount} %"},blackFridayLabel:{id:"homepage.products.blackFridayLabel",defaultMessage:"letný Black Friday"},blackFridayDescriptionText:{id:"homepage.products.blackFriday.descriptionText",defaultMessage:"with code {code}"},conditionalDiscountBrandPrice:{id:"homepage.products.conditionalDiscountBrandPrice",defaultMessage:"{label} on {brand} orders above {price}"},conditionalDiscountBrandPieces:{id:"homepage.products.conditionalDiscountBrandPieces",defaultMessage:"{label} on orders from {brand} of {count} and more pcs"},conditionalDiscountPriceLabel:{id:"homepage.products.conditiionalDiscountPriceLabel",defaultMessage:"- {discountPrice}"},conditionalDiscountCategoryPrice:{id:"homepage.products.conditionalDiscountCategoryPrice",defaultMessage:"{label} on orders from this product category above {price}"},conditionalDiscountCategoryPieces:{id:"homepage.products.conditionalDiscountCategoryPieces",defaultMessage:"{label} on orders from this product category of {count} and more pcs"},freeDeliveryLabel:{id:"homepage.products.freeDelivery",defaultMessage:"free delivery"},freeDeliveryOnBrandPriceFrom:{id:"homepage.products.freeDeliveryOnBrandPriceFrom",defaultMessage:"{freedelivery} on {brand} orders of {price} and more"},freeDeliveryOnBrandPcs:{id:"homepage.products.freeDeliveryOnBrandPcs",defaultMessage:"{freedelivery} on {brand} orders of {count} and more pcs"},freeDeliveryOnCategoryPriceFrom:{id:"homepage.products.freeDeliveryOnCategoryPriceFrom",defaultMessage:"{freedelivery} on orders from this product category of {price} and more"},freeDeliveryOnCategoryPcs:{id:"homepage.products.freeDeliveryOnCategoryPcs",defaultMessage:"{freedelivery} on orders from this product category of {count} and more pcs"},blackFridayDiscountAmount:{id:"homepage.products.discount.highlighted",defaultMessage:"-{amount} %"},recommendedByDermatologistsLabel:{id:"homepage.label.recommendedByDermatologists",defaultMessage:"Recommended by dermatologists"}}),ce=T.z.div`
+  margin-top: 0.625rem;
+  font-weight: 400;
+`,me=T.z.span`
+  font-weight: 500;
+  color: ${g.r.color.text.primary};
+`;var ue=a(2726);const de=e=>n.createElement(le.FormattedMessage,(0,s.Z)({},se.conditionalDiscountBrandPrice,{values:{...e}})),pe=e=>n.createElement(le.FormattedMessage,(0,s.Z)({},se.conditionalDiscountBrandPieces,{values:{...e}})),ge=e=>n.createElement(le.FormattedMessage,(0,s.Z)({},se.conditionalDiscountCategoryPrice,{values:{...e}})),ye=e=>n.createElement(le.FormattedMessage,(0,s.Z)({},se.conditionalDiscountCategoryPieces,{values:{...e}}));let he=function(e){return e.BrandAbsolutePrice="BrandAbsolutePrice",e.BrandAbsolutePieces="BrandAbsolutePieces",e.BrandAbsoluteDefault="BrandAbsolute",e.BrandRelativePrice="BrandRelativePrice",e.BrandRelativePieces="BrandRelatevePieces",e.BrandRelativeDefault="BrandRelative",e.CategoryAbsolutePrice="CategoryAbsolutePrice",e.CategoryAbsolutePieces="CategoryAbsolutePieces",e.CategoryAbsoluteDefault="CategoryAbsolute",e.CategoryRelativePrice="CategoryRelativePrice",e.CategoryRelativePieces="CategoryRelativePieces",e.CategoryRelativeDefault="CategoryRelative",e.UnknownAbsolutePrice="UnknownAbsolutePrice",e.UnknownAbsolutePieces="UnknownAbsolutePieces",e.UnknownAbsoluteDefault="UnknownAbsolute",e.UnknownRelativePrice="UnknownRelativePrice",e.UnknownRelativePieces="UnknownRelativePieces",e.UnknownRelativeDefault="UnknownRelative",e.BrandDefault="Brand",e}({});const ke={[he.BrandAbsolutePrice]:de,[he.BrandRelativePrice]:de,[he.CategoryAbsolutePrice]:ge,[he.CategoryRelativePrice]:ge,[he.UnknownAbsolutePrice]:ge,[he.UnknownRelativePrice]:ge,[he.BrandAbsolutePieces]:pe,[he.BrandRelativePieces]:pe,[he.CategoryAbsolutePieces]:ye,[he.CategoryRelativePieces]:ye,[he.UnknownAbsolutePieces]:ye,[he.UnknownRelativePieces]:ye,[he.BrandDefault]:ue.ZT,[he.BrandAbsoluteDefault]:ue.ZT,[he.BrandRelativeDefault]:ue.ZT,[he.CategoryAbsoluteDefault]:ue.ZT,[he.CategoryRelativeDefault]:ue.ZT,[he.UnknownAbsoluteDefault]:ue.ZT,[he.UnknownRelativeDefault]:ue.ZT},ve=e=>{let{promotionData:t,formattedDiscountPrice:a,formattedPrice:i}=e;const{discountType:r,discountWithCondition:{name:o,nameType:l,condition:c,conditionType:u,discount:d}}=t,p=n.createElement("strong",null,n.createElement(le.FormattedMessage,(0,s.Z)({},se.conditionalDiscountLabel,{values:{discount:d}}))),g=n.createElement("strong",null,n.createElement(le.FormattedMessage,(0,s.Z)({},se.conditionalDiscountPriceLabel,{values:{discountPrice:a}})));if(ke[`${l}${r}${u}`]){const e=r===m.Lb.ABSOLUTE?g:p;return ke[`${l}${r}${u}`]({label:e,brand:o,count:c,price:i})}return null},be=e=>n.createElement(le.FormattedMessage,(0,s.Z)({},se.freeDeliveryOnCategoryPriceFrom,{values:{...e}})),fe=e=>n.createElement(le.FormattedMessage,(0,s.Z)({},se.freeDeliveryOnCategoryPcs,{values:{...e}}));let _e=function(e){return e.BrandPrice="BrandPrice",e.BrandPieces="BrandPieces",e.BrandDefault="Brand",e.CategoryPrice="CategoryPrice",e.CategoryPieces="CategoryPieces",e.CategoryDefault="Category",e.UnknownPrice="UnknownPrice",e.UnknownPieces="UnknownPieces",e.UnknownDefault="Unknown",e}({});const Pe={[_e.BrandPrice]:e=>n.createElement(le.FormattedMessage,(0,s.Z)({},se.freeDeliveryOnBrandPriceFrom,{values:{...e}})),[_e.BrandPieces]:e=>n.createElement(le.FormattedMessage,(0,s.Z)({},se.freeDeliveryOnBrandPcs,{values:{...e}})),[_e.BrandDefault]:ue.ZT,[_e.CategoryPrice]:be,[_e.UnknownPrice]:be,[_e.CategoryPieces]:fe,[_e.UnknownPieces]:fe,[_e.CategoryDefault]:ue.ZT,[_e.UnknownDefault]:ue.ZT},Ce=e=>{let{freeDeliveryWithCondition:t,formattedPrice:a}=e;const{name:n,nameType:r,condition:o,conditionType:l}=t,s=i().createElement("strong",null,i().createElement(le.FormattedMessage,se.freeDeliveryLabel),i().createElement("br",null));return Pe[`${r}${l}`]?Pe[`${r}${l}`]({freedelivery:s,brand:n,price:a,count:o}):null},Ee=e=>{let{promotionData:t,freeDeliveryWithConditionPrice:a,discountWithConditionDiscountPrice:i,discountWithConditionPrice:r}=e;const{discountWithCondition:o,freeDeliveryWithCondition:l}=t;return o&&i&&r?n.createElement(ce,null,n.createElement(ve,{promotionData:t,formattedDiscountPrice:i,formattedPrice:r})):l&&a?n.createElement(ce,null,n.createElement(Ce,{freeDeliveryWithCondition:t.freeDeliveryWithCondition,formattedPrice:a})):n.createElement(le.FormattedMessage,(0,s.Z)({},se.blackFridayDescriptionText,{values:{code:n.createElement(me,null,t.voucherCode)}}))},we=e=>{const{defaultLanguage:t,secondaryCurrency:a,defaultCurrency:n}=(0,X.K$)(),{formatNumber:i}=(0,le.useIntl)(),{priceDecimalPlaces:r}=t;return e.map((e=>{let{price:t,productId:o,dualPrice:l}=e;const s=(e=>{let{priceDecimalPlaces:t,price:a,dualPrice:n,formatNumber:i,secondaryCurrencyCode:r,defaultCurrencyCode:o}=e;const l=n&&i(n,{style:"currency",currency:r,maximumFractionDigits:t,minimumFractionDigits:t});return`${i(a,{style:"currency",currency:o,maximumFractionDigits:t,minimumFractionDigits:t})}${n?`${c.MQ.NO_BREAK_SPACE}/${c.MQ.NO_BREAK_SPACE}${l}`:""}`})({priceDecimalPlaces:r,defaultCurrencyCode:n.code,formatNumber:i,price:t,dualPrice:l,secondaryCurrencyCode:a?.code});return{productId:o,formattedDualPrice:s}}))},De=e=>e.tags?.some((e=>e.toLowerCase()===m.ss.BLACK_FRIDAY.toLowerCase())),Se=e=>e.tags?.some((e=>e.toLowerCase()===m.ss.SUMMER_BLACK_FRIDAY.toLowerCase())),Ae=e=>{const t=De(e),a=Se(e);return t?m.ss.BLACK_FRIDAY:a?m.ss.SUMMER_BLACK_FRIDAY:void 0},Te={[m.a5.CLEARANCE]:oe.Q.TagAttributes.Clearance,[m.a5.ON_SALE]:oe.Q.TagAttributes.Action},Ie={[m.IH.DAMAGED]:oe.Q.TagAttributes.Damaged,[m.IH.RETURNED]:oe.Q.TagAttributes.Returned};var Re=a(4646);const Oe={showOriginalPriceFirstListing:!1,promotionCampaignsFreeDelivery:!1},Ne=(e,t)=>{const a=e.map((e=>({price:e.priceInformation.price,productId:e.id,originalPrice:e.priceInformation.originalPrice,unitPrice:e.priceInformation.unitPrice,dualPrice:e.priceInformation.dualPrice,showGrouped:e.showGrouped}))),{defaultCurrency:i}=(0,X.K$)(),{code:r}=i,o=(e=>{const{formatNumber:t,formatMessage:a}=(0,le.useIntl)(),{showOriginalPriceFirstListing:i}=(()=>{const e=(0,Re.g)();return e&&0!==Object.keys(e).length?e:Oe})(),{defaultCurrency:r,defaultLanguage:o,secondaryCurrency:l}=(0,X.K$)(),{priceDecimalPlaces:s,priceFormat:c}=o,{symbol:m}=r,u=n.useCallback(((e,n,i)=>({price:t(e,{minimumFractionDigits:s,maximumFractionDigits:s}),currencySymbol:n,currencyFormat:c,prefix:i?a(se.priceInCollection,{price:""}):""})),[a,t,s,c]);return n.useMemo((()=>{const t=[];for(const a of e){const{price:e,productId:n,originalPrice:r,unitPrice:o,dualPrice:s,showGrouped:c}=a,d={productId:n,...e&&{price:u(e,m,c)},...r&&{originalPrice:u(r,m,c)},...o?.unit&&{unitPrice:{price:u(o.pricePerUnit,m,c),unitAmount:String(o.unit.amount),unit:o.unit.unitName}},...s&&{dualPrice:i?u(e,m,c):u(s,l.symbol,c),price:i?u(s,l.symbol,c):u(e,m,c)}};d&&t.push(d)}return t}),[l,i,u,e,m])})(a),c=(e=>{const[t,a]=n.useState([]),i=(0,X.K$)(),{code:r}=i?.defaultCurrency??{code:""},{getTimeFromInit:o}=(0,u.E)(),{productIds:s,addToWishlist:c,removeFromWishlist:m}=(0,J.Yu)(),d=n.useCallback(((e,t)=>{const a=e.id.toString();t?m(a):c(a);const n=t?s.filter((e=>e!==a)):[...s,a];(0,l.pA)(t,e,r,o(),n.map(Number)),window?.wishlistService?.count()}),[c,r,o,s,m]);return n.useEffect((()=>{const t=e.map((e=>{const t=s.includes(e.id.toString());return{wishlisted:t,onClick:()=>d(e,t),notActive:!1,productId:e.id}}));a(t)}),[d,s,e]),t})(e),d=(e=>{const{formatMessage:t}=(0,le.useIntl)(),{shopId:a}=(0,X.K$)(),i=e.map((e=>{let{promotionData:n,discountReason:i,isNewItem:r,canShowLabels:o,id:l,productAttributes:s}=e;const c=(e=>{let{discountReason:t,freeDelivery:a,isNewItem:n,canShowLabels:i,formatMessage:r,attributes:o}=e;const l=[];return t&&Te[t]&&l.push(Te[t]),a&&l.push(oe.Q.TagAttributes.FreeDelivery),o.includes(m.in.GIFT)&&l.push(oe.Q.TagAttributes.Gift),n&&l.push(oe.Q.TagAttributes.New),t&&Ie[t]&&l.push(Ie[t]),{attributes:l.map((e=>({attribute:e,label:`attribute${e}`in se?r(se[`attribute${e}`]):""}))),visible:l.length>0&&i}})({discountReason:i,freeDelivery:n.freeDelivery,isNewItem:r,canShowLabels:o,formatMessage:t,attributes:s}),u=(e=>{let{promotionData:t,formatMessage:a,shopId:n,canShowLabels:i}=e;const r=[];if(i&&t){const e=De(t),i=Se(t);e&&r.push({icon:oe.Q.SpecialSales.blackFriday,label:a(se.blackFridayLabel)}),i&&r.push({icon:oe.Q.SpecialSales.summerBlackFriday,label:a(se.blackFridayLabel),highlightedWordIndex:"notino.fr"===n?2:0})}return r})({promotionData:n,formatMessage:t,shopId:a,canShowLabels:o});return{productId:l,tags:c,icons:u}}));return(0,n.useMemo)((()=>i),[i])})(e),p=(e=>{const{formatMessage:t}=(0,le.useIntl)(),a=(e=>{const{defaultLanguage:t,defaultCurrency:a}=(0,X.K$)(),{formatNumber:n}=(0,le.useIntl)();return e.map((e=>{let{productId:i,price:r}=e;return{productId:i,formattedPrice:n(r,{style:"currency",currency:a.code,maximumFractionDigits:t.priceDecimalPlaces,minimumFractionDigits:t.priceDecimalPlaces})}}))})(e.map((e=>{let{productId:t,promotionData:a}=e;return{productId:t,price:a?a.discountValue:0}}))),i=we(e.map((e=>{let{productId:t,promotionData:a}=e;return{productId:t,price:a?.freeDeliveryWithCondition?.condition,dualPrice:a?.freeDeliveryWithCondition?.dualCondition}}))),r=we(e.map((e=>{let{productId:t,promotionData:a}=e;return{productId:t,price:a?.discountWithCondition?.discount,dualPrice:a?.freeDeliveryWithCondition?.dualCondition}}))),o=we(e.map((e=>{let{productId:t,promotionData:a}=e;return{productId:t,price:a?.discountWithCondition?.condition,dualPrice:a?.discountWithCondition?.dualCondition}})));return n.useMemo((()=>e.map((e=>{let{productId:l,promotionData:s,canShowLabels:c}=e;const u={productId:l},{freeDeliveryWithCondition:d,discountWithCondition:p}=s,g=r.find((e=>e.productId===l))?.formattedDualPrice,y=o.find((e=>e.productId===l))?.formattedDualPrice,h=i.find((e=>e.productId===l))?.formattedDualPrice,k=a.find((e=>e.productId===l))?.formattedPrice;if(!c||!s)return u;const v=n.createElement(Ee,{promotionData:s,discountWithConditionDiscountPrice:g,discountWithConditionPrice:y,freeDeliveryWithConditionPrice:h});return d||p?{...u,discountDescription:v}:s.isDiscount&&k?{...u,discountAmount:s.discountType===m.Lb.RELATIVE?t(se.blackFridayDiscountAmount,{amount:s.discountValue}):k,discountLabel:t(se.blackFridayLabel),discountDescription:v,decoration:Ae(s)}:{...u}}))),[r,o,t,a,i,e])})(e.map((e=>{let{id:t,promotionData:a,canShowLabels:n}=e;return{productId:t,promotionData:a,canShowLabels:n}}))),g=(e=>{const{formatMessage:t}=(0,le.useIntl)();return n.useMemo((()=>e.map((e=>{let{attributes:a,productId:n}=e;const i=[];return a.includes(m.in.RECOMMENDED_BY_DERMATOLOGISTS)&&i.push({icon:oe.Q.SpecialSales.recommendedByDermatologists,title:t(se.recommendedByDermatologistsLabel)}),{productId:n,icons:i?.length>0?i:[]}}))),[t,e])})(e.map((e=>({productId:e.id,attributes:e.productAttributes})))),y=e.map(((e,a)=>{const{id:i,brandName:u,name:y,subName:h,annotation:k,url:v,imageUrl:b,reviewInformation:f,showGrouped:_,discountReason:P,promotionData:C,stockAvailability:E}=e,w=E!==m.ON.OUT_OF_STOCK,D=c.find((t=>t.productId===e.id)),{tags:S,icons:A}=d.find((t=>t.productId===e.id)),T=o.find((t=>t.productId===e.id)),{price:I,originalPrice:R,unitPrice:O,dualPrice:N}=T,x=g.find((t=>t.productId===e.id)),{discountDescription:L,...M}=p.find((t=>t.productId===e.id)),B=L&&(_||!P||!!C.freeDeliveryWithCondition&&!C.freeDelivery)&&n.createElement(re.v.Discount,(0,s.Z)({},M,{discountDescription:L}));return{state:oe.Q.State.product,product:{id:i.toString(),brandName:u,name:y,subName:h,variantName:k},href:v,price:I,originalPrice:R,unitPrice:O,dualPrice:N,imageProps:{src:b,alt:`${u} ${y} ${k}`},onClick:()=>(0,l.EK)({product:[(0,ee.e)({product:e,currencyCode:r,isWishlisted:D.wishlisted,listName:t,listPosition:a})],event:"select_item",_clear:!0}),wishlist:{...D},tags:S,productIcons:[...w?A:[],...x.icons],...f?.score&&{ratings:{score:f.score,inSectionOfType:f.inSectionOfType}},aboveBuyButton:B}}));return y},xe=T.z.div`
+  p {
+    line-height: 1rem !important;
+    margin-bottom: unset !important;
+  }
+`,Le=T.z.div`
+  margin-top: 1.5rem;
+`,Me=e=>{let{title:t,products:a,listName:i,itemsPerSlide:r}=e;const o=Ne(a,i),{onItemShow:l}=n.useContext(ne);return o&&o.length>0?n.createElement(xe,{"data-testid":"itemsContainer"},n.createElement(w,null,n.createElement(S,{titleElement:c._O.H2,title:t})),n.createElement(Le,null,n.createElement(Y._,{products:o,itemsPerSlide:r,onItemShow:l,inViewThreshold:.01}))):null},Be=e=>{const t=(0,q.S)({lg:!0},{ssrValue:!1})?4:2;return n.createElement(ie,(0,s.Z)({},e,{itemsPerSlide:t}),n.createElement(Me,(0,s.Z)({},e,{itemsPerSlide:t})))},Ue=T.z.div`
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+
+  @media (min-width: ${p.A.md}) {
+    margin-top: 5rem;
+  }
+
+  @media (min-width: ${p.A.lg}) {
+    margin-top: 2.5rem;
+  }
+`,ze=T.z.div`
+  flex: 1;
+
+  & > a {
+    @media (min-width: ${p.A.md}) {
+      padding-top: ${e=>{let{isMobileImagesUsed:t}=e;return t?"14rem":"21.25rem"}};
+    }
+  }
+`,Fe=T.z.div`
+  display: none;
+
+  @media (min-width: ${p.A.lg}) {
+    display: block;
+  }
+`,$e=e=>{let{promotionBanners:t}=e;return n.createElement(Fe,null,n.createElement(je,{promotionBanners:t}))},je=e=>{let{promotionBanners:t}=e;const{openModal:a}=(0,K.DK)(),i=t.length>1,[r,o]=(0,z.YD)({triggerOnce:!0});return n.useEffect((()=>{o&&(0,l.b3)(t,"view_promotion")}),[o,t]),t&&t.length>0?n.createElement(Ue,{ref:r,"data-testid":"promotionBanners"},t.map(((e,t)=>{const r=i?{...e,image:{desktop:e.image.mobile,mobile:null,desktopHighRes:e.image.desktopHighResolution}}:e;return n.createElement(ze,{key:e.title,isMobileImagesUsed:i},n.createElement(F.j,(0,s.Z)({},r,{onClick:()=>(0,l.aN)(e,t,"select_promotion"),onInfoButtonClick:e.legalPopup.legalPopupText&&e.legalPopup.useLegalPopup?()=>a(e.legalPopup):void 0})))}))):null};var We=a(1877),He=a(3312);const Ze=d.ZP.div`
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 15.47rem;
+  min-width: 15.625rem;
+
+  @media (min-width: ${p.A.lg}) {
+    height: 18.25rem;
+    max-width: 17.5625rem;
+    padding: 0 1.25rem;
+  }
+`,Ke=d.ZP.div`
+  border: 1px solid ${g.r.color.border.divider};
+  box-sizing: border-box;
+  z-index: 1;
+
+  @media (min-width: ${p.A.lg}) {
+    height: 10.625rem;
+  }
+`,Ge=d.ZP.a`
+  color: ${g.r.color.text.tertiary} !important;
+  text-decoration: none;
+  ${g.r.typography.bodySmall}
+
+  &:hover {
+    text-decoration: underline;
+    color: ${g.r.color.text.tertiary};
+  }
+`,Ve=d.ZP.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  gap: 0.25rem 0.6rem;
+
+  @media (min-width: ${p.A.lg}) {
+    padding: 0 2rem;
+  }
+`,Qe=d.ZP.a`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  z-index: 2;
+  margin-top: -6rem;
+
+  &:hover {
+    text-decoration: underline;
+    color: ${g.r.color.text.secondary};
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    min-height: 7rem !important;
+  }
+
+  img {
+    mix-blend-mode: multiply;
+    image-rendering: -webkit-optimize-contrast;
+    z-index: 2;
+    padding-bottom: 0.625rem;
+    max-height: 7rem !important;
+  }
+
+  @media (min-width: ${p.A.lg}) {
+    margin-top: -6.91rem;
+
+    div {
+      min-height: 8.75rem !important;
+    }
+
+    img {
+      max-height: 8.75rem !important;
+    }
+  }
+`,Ye=(0,d.ZP)(E)`
+  color: ${g.r.color.text.secondary};
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0 0 0.5rem 0; //Override global margins of titles
+`,qe=e=>{let{category:{name:t,imageUrl:a,subCategories:n,url:r},index:o}=e;const{trackOnClick:s}=(()=>{const{getTimeFromInit:e}=(0,u.E)();return{trackOnClick:i().useCallback(((t,a,n)=>{(0,l.EK)({element:{name:t,action:"click_on_seo_category_topLevel",interaction:"click",type:"seo_category_tile",link_path:a,position:n.toString(),timing:e()},event:"element_click",_clear:!0})}),[e])}})(),{trackOnClick:m}=(()=>{const{getTimeFromInit:e}=(0,u.E)();return{trackOnClick:i().useCallback(((t,a,n)=>{(0,l.EK)({element:{name:t,action:"click_on_seo_category",interaction:"click",type:"seo_category_tile",link_path:a,position:n.toString(),timing:e()},event:"element_click",_clear:!0})}),[e])}})();return i().createElement(Ze,{"data-testid":"categoryContainer"},i().createElement(Ke,null,i().createElement(Qe,{href:r,onClick:()=>s(t,r,o)},i().createElement(He.y,{alt:t,src:a,aspectRatio:c.L0.NOT_DEFINED,link:r}),i().createElement(Ye,null,t)),i().createElement(Ve,null,n.map(((e,t)=>i().createElement(Ge,{key:e.name,href:e.url,onClick:()=>m(e.name,e.url,t)},e.name))))))},Xe=T.z.div`
+  width: 100%;
+  height: fit-content;
+  position: relative;
+`,Je=T.z.div`
+  @media (min-width: ${p.A.lg}) {
+    width: 59.96rem;
+    margin: 0 2.375rem;
+    padding-left: 0.75rem;
+  }
+`,et=T.z.div`
+  display: block;
+  position: relative;
+
+  @media (min-width: ${p.A.lg}) {
+    position: unset;
+    padding-top: 1.5rem;
+
+    > * {
+      position: unset !important;
+    }
+  }
+`,tt=T.z.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 0 1rem 0 1rem;
+  gap: 1.5rem;
+  flex: none;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: ${p.A.lg}) {
+    margin-top: 1.5rem;
+  }
+`,at=e=>{let{title:t,categories:a}=e;const i=(0,q.S)({lg:!0},{ssrValue:!1}),r={slidesToShow:3,slidesToScroll:3};return a&&a.length>0?n.createElement(Xe,null,n.createElement(Je,{"data-testid":"categories"},n.createElement(w,null,n.createElement(S,{titleElement:c._O.H2,title:t})),n.createElement(et,null,i?n.createElement(We.f,r,a.map(((e,t)=>n.createElement(qe,{key:e.name,category:e,index:t})))):n.createElement(tt,null,a.map(((e,t)=>n.createElement(qe,{key:e.name,category:e,index:t}))))))):null},nt=d.ZP.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5em;
+
+  @media (min-width: ${p.A.lg}) {
+    padding: 0 0;
+  }
+`,it=d.ZP.a`
+  ${g.r.typography.labelRegular400}
+  color: ${g.r.color.text.primary};
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0.75em;
+
+  ${e=>{let{isSpecial:t}=e;return t&&d.iv`
+      font-weight: bold;
+      text-transform: uppercase;
+      color: ${g.r.color.text.primary} !important;
+    `}};
+`,rt=(0,d.ZP)(He.y)`
+  border-radius: 50%;
+`,ot=d.ZP.div`
+  width: 4.375em;
+
+  @media (min-width: ${p.A.lg}) {
+    width: 5em;
+  }
+`,lt=e=>{let{name:t,imageUrl:a,url:i,isSpecial:r,position:o}=e;const{getTimeFromInit:s}=(0,u.E)(),m=()=>(0,l.EK)({element:{name:t,action:"click_on_shop_category_tile",interaction:"click",type:"shop_category_tile",link_path:i,position:o.toString(),timing:s()},event:"element_click",_clear:!0});return n.createElement(nt,{"data-testid":"shopCategoriesContainer"},n.createElement(ot,{onClick:m},n.createElement(rt,{alt:t,aspectRatio:c.L0.SQUARE,src:a,link:i})),n.createElement(it,{isSpecial:r,href:i,onClick:m},t))},st=d.ZP.div`
+  display: flex;
+  padding: 0 1rem 0 0.5rem;
+  margin: 1.5rem 0;
+  overflow: auto;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: ${p.A.md}) {
+    margin: 3.5rem 0 2rem 0;
+  }
+
+  @media (min-width: ${p.A.lg}) {
+    display: none;
+  }
+`,ct=d.ZP.div`
+  display: none;
+  margin: 3.5rem 2rem 2rem 2rem;
+
+  @media (min-width: ${p.A.lg}) {
+    display: block;
+  }
+`,mt=e=>{let{shopCategories:t}=e;const a={slidesToShow:7,slidesToScroll:7,scrollAnimation:"ease-in-out"};return t&&t.length>0?n.createElement(n.Fragment,null,n.createElement(ct,{"data-testid":"shopCategories"},n.createElement(We.f,a,t.map(((e,t)=>n.createElement(lt,(0,s.Z)({key:e.name},e,{position:t+1})))))),n.createElement(st,null,t.map(((e,t)=>n.createElement(lt,(0,s.Z)({key:e.name},e,{position:t+1})))))):null},ut=d.ZP.div`
+  margin-top: 5rem;
+
+  @media (min-width: ${p.A.md}) {
+    margin-top: 7.5rem;
+  }
+`,dt=e=>{let{componentProps:t}=e;switch(t.type){case c.re.PRIMARY_BANNERS:return n.createElement(B,null,n.createElement(Q,{primaryBanners:t.data.primaryBanners}));case c.kC.LAST_VISITED_PRODUCTS:return n.createElement(ut,null,n.createElement(B,null,n.createElement(Be,(0,s.Z)({},t.data,{listName:m.Qx.LAST_VISITED_PRODS}))),n.createElement(B,null,n.createElement(H,{type:t.type})));case c.re.CATEGORIES:return n.createElement(ut,null,n.createElement(B,null,n.createElement(at,t.data)));case c.kC.BESTSELLERS:return n.createElement(ut,null,n.createElement(B,null,n.createElement(Be,(0,s.Z)({},t.data,{listName:m.Qx.BESTSELLERS}))),n.createElement(B,null,n.createElement(H,{type:t.type})));case c.re.BLOG_ARTICLES:return n.createElement(ut,null,n.createElement(B,null,n.createElement(R,t.data)));case c.re.BRANDS:return n.createElement(B,null,n.createElement(O.i,t.data));case c.re.BENEFITS:return n.createElement(B,null,n.createElement(v,t.data));case c.re.PROMOTIONS_BANNERS:return n.createElement(B,null,n.createElement($e,t.data));case c.kC.CUSTOM_PRODUCTS_ROW:return n.createElement(ut,null,n.createElement(B,null,n.createElement(Be,(0,s.Z)({},t.data,{listName:m.Qx.CUSTOM_PRODUCTS_ROW}))),n.createElement(B,null,n.createElement(H,{type:t.type})));case c.kC.CUSTOM_PRODUCTS_ROW_2:return n.createElement(ut,null,n.createElement(B,null,n.createElement(Be,(0,s.Z)({},t.data,{listName:m.Qx.CUSTOM_PRODUCTS_ROW_2}))),n.createElement(B,null,n.createElement(H,{type:t.type})));case c.re.SHOP_CATEGORIES:return n.createElement(B,null,n.createElement(mt,t.data));default:return null}};var pt=a(7217);const gt=(0,le.defineMessages)({title:{id:"homepage.header.title",defaultMessage:"Homepage"}}),yt=n.memo((e=>{let{metaTitle:t,metaDescription:a,metaKeywords:i,hreflangs:r}=e;const{formatMessage:o}=(0,le.useIntl)(),{shopId:l}=(0,X.K$)();n.useEffect((()=>{t&&(document.title=t??o(gt.title))}),[t,o]);const s=l?`https://www.${l}/`:void 0,c=[t&&n.createElement("title",{key:"title"},t),i&&n.createElement("meta",{key:"keywords",name:"keywords",content:i}),a&&n.createElement("meta",{key:"description",name:"description",content:a}),r&&r.length>0&&r.map((e=>n.createElement("link",{key:e.culture,rel:"alternate",href:e.url,hrefLang:e.culture}))),n.createElement("meta",{key:"robots",name:"robots",content:"index,follow,all"}),s&&n.createElement("link",{key:"canonical",rel:"canonical",href:s}),n.createElement("meta",{key:"og:type",property:"og:type",content:"website"}),s&&n.createElement("meta",{key:"og:url",property:"og:url",content:s}),t&&n.createElement("meta",{key:"og:title",property:"og:title",content:t}),a&&n.createElement("meta",{key:"og:description",property:"og:description",content:a})].flat().filter(Boolean);return n.createElement(pt.F,null,c)})),ht={type:c.re.BENEFITS,data:{benefits:[{fullUrl:"/proc-si-vybrat-notino/#benefit-store",url:"benefit-store",header:"<strong>Široký výběr</strong> kosmetiky a parfémů"},{fullUrl:"/proc-si-vybrat-notino/#benefit-money-back",url:"benefit-money-back",header:"Garantujeme <strong>90 dní na vrácení zboží</strong>"},{fullUrl:"/proc-si-vybrat-notino/#shop",url:"shop",header:"<strong>Kamenné prodejny</strong> s internetovými cenami"}]}},kt={type:c.re.BLOG_ARTICLES,data:{title:"Articles about parfums",articles:[{title:"Best article ever written",url:"https://www.notino.cz/slevy/",hreflangId:"oh-my-god-he-is-right",image:{src:"https://paradepets.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTkxMzY1Nzg4MTM5MjY3Njgy/shetland-sheepdog.webp",alt:"picture about cosmetics"}},{title:"Worst article ever written",url:"https://www.notino.cz/slevy/",hreflangId:"oh-my-god-it-is-really-bad",image:{src:"https://paradepets.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTkxMzY1Nzg4NjczMzIwNTQ2/cutest-dog-breeds-jpg.webp",alt:"picture about other cosmetics"}},{title:"Second Best article ever written",url:"https://www.notino.cz/slevy/",hreflangId:"it-is-ok",image:{src:"https://images.rawpixel.com/image_1300/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L25zODIzMC1pbWFnZS5qcGc.jpg",alt:"picture also about cosmetics"}}]}},vt={type:c.re.BRANDS,data:{brands:[{id:18272,name:"Kiehl's",url:"/kiehls/",imageUrl:"https://cdn.notinoimg.com/images/gallery/logo/kiehls_logo_240x100_20220411_51.png",campaignId:"campaignId"},{id:150,name:"DIOR",url:"/dior/",imageUrl:"https://cdn.notinoimg.com/images/gallery/logo/240x100px_DIOR_NEW_LOGO.jpg"},{id:145,name:"Versace",url:"/versace/",imageUrl:"https://cdn.notinoimg.com/images/gallery/logo/VERSACE-'90.png"},{id:148,name:"Yves Saint Laurent",url:"/yves-saint-laurent/",imageUrl:"https://cdn.notinoimg.com/images/gallery/logo/YSL.png",campaignId:"campaignId"},{id:89,name:"Lancôme",url:"/lancome/",imageUrl:"https://cdn.notinoimg.com/images/gallery/logo/Lancome-logo_240x100.png"},{id:3803,name:"Kérastase",url:"/kerastase/",imageUrl:"https://cdn.notinoimg.com/images/gallery/logo/KERASTASE_NEW%20COM_N.jpg"},{id:44,name:"Estée Lauder",url:"/estee-lauder/",imageUrl:"https://cdn.notinoimg.com/images/gallery/logo/ESTEE_LAUDER.jpg"},{id:25348,name:"NYX Professional Makeup",url:"/nyx-professional-makeup/",imageUrl:"https://cdn.notinoimg.com/images/gallery/logo/NYX_ProLogo_240x100px.png",campaignId:"campaignId"}]}},bt={type:c.re.PRIMARY_BANNERS,data:{primaryBanners:[{background:{color:"fbe3e3",image:"https://cdn.notinoimg.com/images/gallery/promotions/longbackground/03_uni_long-background_fbe3e3.jpg",imageHighResolution:null,repeat:1},title:"W11 - men",link:"/panske-parfemy-a-kosmetika/",imageAlt:null,image:{desktop:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_desk_hp_Men_w11_24_03_fix.jpg",mobile:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_mob_hp_Men_w11_24_fix.jpg",desktopHighResolution:null},ecommerce:{id:"20240318|W11---men",code:"2309730_null|",creative:"cz_desk_hp_Men_w11_24_03_fix.jpg"},legalPopup:{useLegalPopup:null,legalPopupTitle:null,legalPopupText:null,legalPopupButtonText:null}},{background:{color:"d0d9fc",image:"https://cdn.notinoimg.com/images/gallery/promotions/longbackground/02_uni_long-background_d0d9fc.jpg",imageHighResolution:null,repeat:1},title:"W11 - MIX GWP",link:"/weekly-promo",imageAlt:null,image:{desktop:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_desk_hp_gifts_w03_24_02.jpg",mobile:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_mob_hp_gifts_w03_24_02.jpg",desktopHighResolution:null},ecommerce:{id:"20240318|W11---MIX-GWP",code:"2309777_null|",creative:"cz_desk_hp_gifts_w03_24_02.jpg"},legalPopup:{useLegalPopup:null,legalPopupTitle:null,legalPopupText:null,legalPopupButtonText:null}},{background:{color:"0d0b1e",image:"https://cdn.notinoimg.com/images/gallery/promotions/estee-lauder_bu_long-background_0d0b1e_tst.jpg",imageHighResolution:null,repeat:1},title:"W11 - BU",link:"/beauty-unites/",imageAlt:null,image:{desktop:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_desk_hp_ELC_beauty-unites_w11_24.jpg",mobile:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_mob_hp_ELC_beauty-unites_w11_24.jpg",desktopHighResolution:null},ecommerce:{id:"20240318|W11---BU",code:"2400557_W11W12BU3|v35z26923z4027z24520z29z5240",creative:"cz_desk_hp_ELC_beauty-unites_w11_24.jpg"},legalPopup:{useLegalPopup:null,legalPopupTitle:null,legalPopupText:null,legalPopupButtonText:null}},{background:{color:"e9f4d3",image:"https://cdn.notinoimg.com/images/gallery/promotions/longbackground/01_long-background_e9f4d3.jpg",imageHighResolution:null,repeat:1},title:"SERVICES: Fragrance finder ",link:"/inspirace/",imageAlt:"SERVICES: Fragrance finder",image:{desktop:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_desk_hp_unique_frag-finder-01_w01_24.jpg",mobile:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_mob_hp_unique_frag-finder-01_w01_24.jpg",desktopHighResolution:null},ecommerce:{id:"20240318|SERVICES:-Fragrance-finder-",code:"2435045_null",creative:"cz_desk_hp_unique_frag-finder-01_w01_24.jpg"},legalPopup:{useLegalPopup:null,legalPopupTitle:null,legalPopupText:null,legalPopupButtonText:null}}]}},ft=[{id:16112842,url:"/3m/spofaplast-naplast-kusova-textilni-156-72-x-19mm-naplast-pro-osetreni-drobnych-poraneni/",priceInformation:{price:14,tax:12,originalPrice:null,dualPrice:null,unitPrice:{pricePerUnit:2.8,unit:{unitName:"ks",amount:1}}},imageUrl:"https://cdn.dev.notino.app/list/3m/4046719485475_01-o.jpg",name:"Spofaplast Textilní náplast 72 x 19 mm",subName:"zdravotnický prostředek",brandName:"3M",annotation:"náplast 5 ks",stockAvailability:m.ON.MORE_THAN20,productCode:"3M3EKEZ_ZCNR25",reviewInformation:null,showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!0,discountValue:15,discountType:m.Lb.RELATIVE,voucherCode:"valentine",tags:["summerblackfriday"],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Health",primarySubcategory:"Medical Supplies",primaryType:"Plasters",primaryKind:"Health",productAttributes:[m.in.HEALTH_AND_MEDICINE_TYPE_OF_GOODS],canShowLabels:!0},{id:16096670,url:"/3ina/the-volume-mascara-objemova-rasenka/",priceInformation:{price:260,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/3ina/8435446413121_01-o.jpg",name:"The Volume Mascara",subName:"",brandName:"3INA",annotation:"objemová řasenka 17 ml",stockAvailability:m.ON.MORE_THAN20,productCode:"3NATWMW_KMSC02",reviewInformation:{score:4.7,count:14},showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:["blackFriday"],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Makeup",primarySubcategory:"Eyes",primaryType:"Mascaras",primaryKind:"Cosmetics and other needs",productAttributes:[],canShowLabels:!0},{id:15714689,url:"/4711/original-deospray-unisex/",priceInformation:{price:123,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/4711/4011700740291_01-o__4.jpg",name:"Original",subName:"",brandName:"4711",annotation:"deodorant ve spreji unisex 150 ml",stockAvailability:m.ON.MORE_THAN20,productCode:"471ORIU_DDSR10",reviewInformation:{score:3.8,count:5},showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:[],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Perfumes",primarySubcategory:"Perfumed cosmetics",primaryType:"Deodorants and antiperspirants",primaryKind:"Fragrances",productAttributes:[],canShowLabels:!0},{id:16089008,url:"/54-celsius/pyropet-kisacat-vonna-svicka/",priceInformation:{price:575,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/54_celsius/857316000275_01-o.jpg",name:"PyroPet KISA (Cat)",subName:"",brandName:"54 Celsius",annotation:"vonná svíčka 17 cm",stockAvailability:m.ON.LAST3,productCode:"54CPPCH_DSVI04",reviewInformation:null,showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:[],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Home Scents",primarySubcategory:"Candles",primaryType:"Scented Candles",primaryKind:"Fragrances",productAttributes:[],canShowLabels:!0},{id:16098713,url:"/anastasia-beverly-hills/brush-oboustranny-stetec-na-oboci/",priceInformation:{price:462,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/anastasia_beverly_hills/689304280334_01-o.jpg",name:"Brush",subName:"",brandName:"Anastasia Beverly Hills",annotation:"oboustranný štětec na obočí 12 1 ks",stockAvailability:m.ON.MORE_THAN20,productCode:"ABHBRUW_KBRU01",reviewInformation:null,showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:[],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Makeup",primarySubcategory:"Brushes and Sponges",primaryType:"Eyeshadow Brushes",primaryKind:"Cosmetics and other needs",productAttributes:[],canShowLabels:!0},{id:16109413,url:"/ambientair/olphactory-cedar-oud-bytovy-sprej/",priceInformation:{price:368,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/ambientair/8435474422584_01-o.jpg",name:"The Olphactory Cedar & Oud",subName:"",brandName:"Ambientair",annotation:"bytový sprej 500 ml",stockAvailability:m.ON.MORE_THAN20,productCode:"ABICDOH_DARO11",reviewInformation:null,showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:[],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Home Scents",primarySubcategory:"Home Fragrance",primaryType:"Air Fresheners",primaryKind:"Fragrances",productAttributes:[],canShowLabels:!0},{id:16109404,url:"/ambientair/olphactory-cedar-oud-napln-do-aroma-difuzeru/",priceInformation:{price:364,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/ambientair/8435474422591_01-o.jpg",name:"The Olphactory Cedar & Oud",subName:"",brandName:"Ambientair",annotation:"náplň do aroma difuzérů 250 ml",stockAvailability:m.ON.MORE_THAN20,productCode:"ABICDOH_DRFL09",reviewInformation:null,showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:[],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Home Scents",primarySubcategory:"Diffusers",primaryType:"Diffuser Refills",primaryKind:"Fragrances",productAttributes:[],canShowLabels:!0},{id:15869938,url:"/ambientair/lacrosse-pure-oxygen-vonna-svicka/",priceInformation:{price:304,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/ambientair/8435474414886_01-o__3.jpg",name:"Lacrosse Pure Oxygen",subName:"",brandName:"Ambientair",annotation:"vonná svíčka 200 g",stockAvailability:m.ON.MORE_THAN20,productCode:"ABILPOH_DCAN01",reviewInformation:null,showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:[],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Home Scents",primarySubcategory:"Candles",primaryType:"Scented Candles",primaryKind:"Fragrances",productAttributes:[],canShowLabels:!0},{id:16198932,url:"/ambientair/lacrosse-pure-oxygen-aroma-difuzer/",priceInformation:{price:346,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/ambientair/8435474414763_01-o.jpg",name:"Lacrosse Pure Oxygen",subName:"",brandName:"Ambientair",annotation:"aroma difuzér 100 ml",stockAvailability:m.ON.MORE_THAN20,productCode:"ABILPOH_DDFR10",reviewInformation:null,showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:[],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Home Scents",primarySubcategory:"Diffusers",primaryType:"Diffusers with Refill",primaryKind:"Fragrances",productAttributes:[],canShowLabels:!0},{id:16195984,url:"/ambientair/the-olphactory-green-leaves-vonna-svicka-bliss/",priceInformation:{price:397,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/ambientair/8435474426636_01-o.jpg",name:"The Olphactory Green Leaves",subName:"",brandName:"Ambientair",annotation:"vonná svíčka Bliss 360 g",stockAvailability:m.ON.MORE_THAN5,productCode:"ABIOGLH_DCAN03",reviewInformation:null,showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:[],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Home Scents",primarySubcategory:"Candles",primaryType:"Scented Candles",primaryKind:"Fragrances",productAttributes:[],canShowLabels:!0},{id:16109341,url:"/ambientair/olphactory-santal-napln-do-aroma-difuzerucosy/",priceInformation:{price:342,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/ambientair/8435474420436_01-o.jpg",name:"The Olphactory Santal",subName:"",brandName:"Ambientair",annotation:"náplň do aroma difuzérů (Cosy) 250 ml",stockAvailability:m.ON.MORE_THAN5,productCode:"ABIOSNH_DRFL05",reviewInformation:null,showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:[],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Home Scents",primarySubcategory:"Diffusers",primaryType:"Diffuser Refills",primaryKind:"Fragrances",productAttributes:[],canShowLabels:!0},{id:16196058,url:"/ambientair/the-olphactory-leather-vonna-svicka-utopia/",priceInformation:{price:525,tax:21,originalPrice:null,dualPrice:null,unitPrice:null},imageUrl:"https://cdn.dev.notino.app/list/ambientair/2800019003829_01-o.jpg",name:"The Olphactory Leather",subName:"",brandName:"Ambientair",annotation:"vonná svíčka Utopia 360 g",stockAvailability:m.ON.LAST1,productCode:"ABIOULH_DCAN12",reviewInformation:null,showGrouped:!1,isNewItem:!1,discountReason:m.a5.ON_SALE,promotionData:{freeDelivery:!1,isDiscount:!1,discountValue:0,discountType:null,voucherCode:null,tags:[],discountWithCondition:null,freeDeliveryWithCondition:null},primaryCategory:"Home Scents",primarySubcategory:"Candles",primaryType:"Scented Candles",primaryKind:"Fragrances",productAttributes:[],canShowLabels:!0}],_t={type:c.kC.LAST_VISITED_PRODUCTS,data:{title:"Last visited products",products:ft}},Pt={type:c.kC.CUSTOM_PRODUCTS_ROW,data:{title:"Tento týden v akci",isRecommended:!1,products:ft}},Ct={type:c.kC.CUSTOM_PRODUCTS_ROW_2,data:{title:"Novinky na Notinu",filter:"1-1-100001",isRecommended:!0,products:ft}},Et={type:c.kC.BESTSELLERS,data:{title:"Nejprodávanější",filter:"",isRecommended:!1,products:ft}},wt={type:c.re.PROMOTIONS_BANNERS,data:{promotionBanners:[{title:"W11 - Dolce & Gabbana",link:"/kq-by-dolcegabbana-intense/",imageAlt:null,image:{desktop:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_desk_hp_Dolce-Gabbana_w11_24.jpg",mobile:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_mob_hp_Dolce-Gabbana_w11_24.jpg",desktopHighResolution:null},ecommerce:{id:"20240318|W11---Dolce-&-Gabbana",code:"237233_W11 DG K and Q Launch|v791z35",creative:"cz_desk_hp_Dolce-Gabbana_w11_24.jpg"},legalPopup:{useLegalPopup:null,legalPopupTitle:null,legalPopupText:null,legalPopupButtonText:null}},{title:"W11 - HERMÈS",link:"/hermes-terre-dhermes/",imageAlt:null,image:{desktop:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_desk_hp_Hermes_w11_24.jpg",mobile:"https://cdn.notinoimg.com/images/gallery/ba/1/cz_mob_hp_Hermes_w11_24.jpg",desktopHighResolution:null},ecommerce:{id:"20240318|W11---HERMES",code:"237235_W11 Hermes Terre|v119z62",creative:"cz_desk_hp_Hermes_w11_24.jpg"},legalPopup:{useLegalPopup:null,legalPopupTitle:null,legalPopupText:null,legalPopupButtonText:null}}]}},Dt={type:c.re.CATEGORIES,data:{title:"Kategorie parfémů a kosmetiky",categories:[{name:"Složky kosmetiky",url:"/slozky-kosmetiky/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/slozky-kosmetiky_2k.jpg",subCategories:[{name:"Kyselina hyaluronová",url:"/slozky-kosmetiky/kyselina-hyaluronova/"},{name:"Kolagen",url:"/slozky-kosmetiky/kolagen/"},{name:"Urea",url:"/slozky-kosmetiky/urea/"},{name:"Aloe vera",url:"/slozky-kosmetiky/aloe-vera/"},{name:"Ceramidy",url:"/slozky-kosmetiky/ceramidy/"},{name:"Propolis",url:"/slozky-kosmetiky/propolis/"},{name:"Vitamin E",url:"/slozky-kosmetiky/vitamin-e/"},{name:"Niacinamid",url:"/slozky-kosmetiky/niacinamid/"},{name:"Retinol",url:"/slozky-kosmetiky/retinol/"}]},{name:"Parfémy podle složení",url:"/vune-parfemu/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/vune-parfemu_2k.jpg",subCategories:[{name:"Santalové dřevo",url:"/parfem-santalove-drevo/"},{name:"Ambra",url:"/ambrovy-parfem/"},{name:"Vetiver",url:"/vetiverovy-parfem/"},{name:"Pačuli",url:"/paculi-parfem/"},{name:"Mošus",url:"/pizmovy-parfem/"},{name:"Oud",url:"/oudovy-parfem/"},{name:"Vanilka",url:"/vanilkovy-parfem/"},{name:"Růže",url:"/ruzovy-parfem/"},{name:"Fialka",url:"/fialkovy-parfem/"},{name:"Levandule",url:"/levandulovy-parfem/"},{name:"Konvalinka",url:"/konvalinkovy-parfem/"}]},{name:"Elektro",url:"/elektronika/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/elektro_2k.jpg",subCategories:[{name:"Fén",url:"/feny-na-vlasy/"},{name:"Kulma",url:"/kulmy-na-vlasy/"},{name:"Žehlička na vlasy",url:"/zehlicky-na-vlasy/"},{name:"Čistič pleti",url:"/kartacek-na-cisteni-pleti/"},{name:"Zastřihovač vousů",url:"/zastrihovac-vousu/"},{name:"Holicí strojek",url:"/elektricky-holici-strojek/"},{name:"Elektrický kartáček",url:"/elektricke-zubni-kartacky/"},{name:"Epilátor",url:"/epilatory/"}]},{name:"Erotika",url:"/erotika/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/Erotika_Notino_20221128_49.jpg",subCategories:[{name:"Vibrátory a stimulátory",url:"/erotika/vibratory-a-stimulatory/"},{name:"Lubrikační gel",url:"/lubrikacni-gely/"},{name:"Kondomy",url:"/kondomy/"},{name:"Feromonové parfémy",url:"/erotika/feromonove-parfemy/"},{name:"Masturbátor pro muže",url:"/erotika/masturbatory/"},{name:"Satisfyer",url:"/satisfyer/"}]},{name:"Dermokosmetika",url:"/dermokosmetika/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/hp-dermo_2k.jpg",subCategories:[{name:"CeraVe",url:"/cerave/"},{name:"Bioderma",url:"/bioderma/"},{name:"La Roche-Posay",url:"/la-roche-posay/"},{name:"Eucerin",url:"/eucerin/"},{name:"Vichy",url:"/vichy/"},{name:"Bi-Oil",url:"/bi-oil/"},{name:"Avène",url:"/avene/"},{name:"Uriage",url:"/uriage/"},{name:"Topicrem",url:"/topicrem/"}]},{name:"Pleťová kosmetika",url:"/kosmetika/pletova-kosmetika/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/hp-skin_2k.jpg",subCategories:[{name:"Pleťový krém",url:"/kosmetika/pletova-kosmetika/pletove-kremy/"},{name:"Krém na tetování",url:"/kosmetika/telova-kosmetika/krem-na-tetovani/"},{name:"Galvanická žehlička",url:"/galvanicka-zehlicka/"},{name:"Esenciální oleje",url:"/esencialni-oleje/"},{name:"Kokosový olej",url:"/kokosovy-olej/"},{name:"Arganový olej",url:"/arganovy-olej/"}]},{name:"Dekorativní kosmetika",url:"/kosmetika/dekorativni-kosmetika/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/make-up_2k.jpg",subCategories:[{name:"Houbička na make up",url:"/houbicka-na-make-up/"},{name:"MAC",url:"/mac/"},{name:"NYX",url:"/nyx-professional-makeup/"},{name:"Pudrový make up",url:"/pudrovy-make-up/"},{name:"Kosmetické zrcátko",url:"/kosmetika/dekorativni-kosmetika/kosmeticke-zrcatko/"},{name:"Bruska na nehty",url:"/kosmetika/dekorativni-kosmetika/bruska-na-nehty/"}]},{name:"Barber Shop",url:"/barber-shop/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/barber-shop_2k.jpg",subCategories:[{name:"Mýdlo na holení",url:"/mydlo-na-holeni/"},{name:"Miska na holení",url:"/panska-kosmetika/miska-na-holeni/"},{name:"Štětka na holení",url:"/panska-kosmetika/stetka-na-holeni/"},{name:"Břitva",url:"/panska-kosmetika/britva-na-holeni/"},{name:"Kamenec",url:"/panska-kosmetika/kamenec/"},{name:"Balzám po holení",url:"/balzam-po-holeni/"},{name:"Nůžky na vousy",url:"/panska-kosmetika/nuzky-na-vousy/"}]},{name:"Vlasová kosmetika",url:"/kosmetika/vlasova-kosmetika/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/hp-hairkerastase_2k.jpg",subCategories:[{name:"Smývatelná barva na vlasy",url:"/smyvatelne-barvy-na-vlasy/"},{name:"Suchý šampon",url:"/suche-sampony/"},{name:"Vosk na vlasy",url:"/vosky-na-vlasy/"},{name:"Šampon na barvené vlasy",url:"/sampon-na-barvene-vlasy/"},{name:"Natáčky na vlasy",url:"/natacky-na-vlasy/"}]},{name:"Tělová kosmetika",url:"/kosmetika/telova-kosmetika/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/hp-body_2k.jpg",subCategories:[{name:"Sprchový gel",url:"/sprchove-gely/"},{name:"Antiperspirant",url:"/deodoranty/"},{name:"Mandlový olej",url:"/mandlovy-olej/"},{name:"Depilace",url:"/depilace/"},{name:"Epilátor",url:"/epilatory/"},{name:"Dámský holící strojek",url:"/damsky-holici-strojek/"}]},{name:"Matka a dítě",url:"/matka-a-dite/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/matka-dite_2k.jpg",subCategories:[{name:"Přebalovací podložky",url:"/matka-a-dite/prebalovaci-podlozky/"},{name:"Chůvičky",url:"/matka-a-dite/chuvicky-pro-deti/"},{name:"Látkové plenky",url:"/matka-a-dite/latkove-pleny/"},{name:"Monitory dechu",url:"/matka-a-dite/monitory-dechu/"},{name:"Kojenecké lahve",url:"/matka-a-dite/kojenecke-lahve/"},{name:"Odsávačky hlenů",url:"/matka-a-dite/odsavacky-hlenu/"}]},{name:"Sportovní výživa",url:"/sportovni-vyziva/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/sport-vyziva_2k.jpg",subCategories:[{name:"Aminokyseliny",url:"/sportovni-vyziva/aminokyseliny/"},{name:"Anabolizéry",url:"/sportovni-vyziva/anabolizery-a-nakopavace/"},{name:"Gainery a sacharidy",url:"/sportovni-vyziva/gainery-a-sacharidy/"},{name:"Kreatin",url:"/sportovni-vyziva/kreatin/"},{name:"Proteiny",url:"/sportovni-vyziva/proteiny/"},{name:"Spalovače tuků",url:"/sportovni-vyziva/spalovace-tuku/"},{name:"Sportovní nápoje",url:"/sportovni-vyziva/sportovni-napoje/"}]},{name:"Dárkové sady",url:"/darky-sady/",imageUrl:"https://cdn.dev.notino.app/images/gallery/hp-category/xmas-box_400x280_20211115_00.jpg",subCategories:[{name:"Yankee Candle",url:"/darky-sady/yankee-candle/"},{name:"Calvin Klein",url:"/darky-sady/calvin-klein/"},{name:"Versace",url:"/darky-sady/versace/"},{name:"Hugo Boss",url:"/darky-sady/hugo-boss/"},{name:"Lancôme",url:"/darky-sady/lancome/"},{name:"Vichy",url:"/darky-sady/vichy/"},{name:"Nivea",url:"/darky-sady/nivea/"},{name:"Old Spice",url:"/darky-sady/old-spice/"},{name:"Estée Lauder",url:"/darky-sady/estee-lauder/"},{name:"Nuxe",url:"/darky-sady/nuxe/"}]}]}},St=[bt,vt,wt,ht,{type:c.re.SHOP_CATEGORIES,data:{shopCategories:[{name:"Akce",isSpecial:!0,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-action.png",url:"https://www.notino.cz/slevy/"},{name:"Parfémy",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"},{name:"Fene",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"},{name:"Zis",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"},{name:"Majstro",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"},{name:"Jablko",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"},{name:"Rieka",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"},{name:"Hora",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"},{name:"Oblak",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"},{name:"Trava",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"},{name:"Dub",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"},{name:"Pohar",isSpecial:!1,imageUrl:"https://cdn.notinoimg.com/images/gallery/hp-category/hp-category/hp-perfumes.png",url:"https://www.notino.cz/parfemy/"}]}},Pt,Ct,Et,_t,kt,Dt],At=d.ZP.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: ${r.jt};
+`,Tt=d.ZP.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+`,It=d.iv`
+  width: inherit;
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  p,
+  ul,
+  ol {
+    a:not([loading]) {
+      color: ${g.r.color.text.primary};
+    }
+  }
+`,Rt=d.ZP.div`
+  ${It};
+
+  padding-bottom: 2.1875rem;
+
+  @media (min-width: ${p.A.lg}) {
+    padding-bottom: 3.125rem;
+  }
+`,Ot=d.ZP.div`
+  ${It};
+  position: relative;
+`,Nt=e=>{let{useMocks:t}=e;const{components:a,metadata:i}=(0,o.vI)(),s=t?St:a,c=n.useMemo((()=>s&&s.filter((e=>r.Mo.includes(e.type)))),[s]),m=n.useMemo((()=>s&&s.filter((e=>!r.Mo.includes(e.type)))),[s]);return n.useEffect((()=>{(0,l.EK)({event:"page_view",page:{path:"/",title:i.metaTitle,type:"homepage",unified_name:"homepage"},_clear:!0})}),[]),n.createElement(n.Fragment,null,n.createElement(yt,{metaTitle:i.metaTitle,metaDescription:i.metaDescription,metaKeywords:i.metaKeywords,hreflangs:i.hreflangs}),c&&c.length>0&&n.createElement(Ot,null,c.map((e=>n.createElement(dt,{key:e.type,componentProps:e})))),n.createElement(Tt,{"data-testid":"homepage"},n.createElement(At,null,m&&m.length>0&&n.createElement(Rt,null,m.map((e=>n.createElement(dt,{key:e.type,componentProps:e})))))))}}}]);
